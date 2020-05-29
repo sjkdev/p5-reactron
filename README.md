@@ -10,7 +10,7 @@
 * 5. fix prod build
 * 6. create second version with side nav
 
-| todo          | Doing         | Done  |
+| Todo          | Doing         | Done  |
 | ------------- |:-------------:| -----:|
 | 2             | 4             | 1     |
 | 3             | 5             |       |
