@@ -1,0 +1,12 @@
+$body-color: rgb(255, 255, 255);
+$main-font-color: rgb(123, 8, 239);
+
+@mixin noflow {
+  overflow: hidden;
+}
+
+body {
+  background-color: $body-color;
+  color: $main-font-color;
+  @include noflow;
+}

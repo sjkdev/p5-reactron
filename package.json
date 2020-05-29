@@ -1,0 +1,88 @@
+{
+  "name": "electron-react-webpack",
+  "version": "1.0.0",
+  "description": "Electron, React, PostCSS and Webpack boilerplate",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": "",
+  "author": {
+    "name": "SJK"
+  },
+  "keywords": [
+    "app",
+    "boilerplate",
+    "electron",
+    "open",
+    "open-source",
+    "postcss",
+    "react",
+    "reactjs",
+    "source",
+    "webpack"
+  ],
+  "engines": {
+    "node": ">=9.0.0",
+    "npm": ">=5.0.0",
+    "yarn": ">=1.0.0"
+  },
+  "browserslist": [
+    "last 4 versions"
+  ],
+  "main": "main.js",
+  "scripts": {
+    "prod": "cross-env NODE_ENV=production webpack --mode production --config webpack.build.config.js && electron --noDevServer .",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --hot --host 0.0.0.0 --config=./webpack.dev.config.js --mode development",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.build.config.js --mode production",
+    "package": "npm run build",
+    "postpackage": "electron-packager ./ --out=./builds",
+    "postbuild": "react-snap"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "@popperjs/core": "^2.4.0",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "p5": "^1.0.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0",
+    "react-router-dom": "^5.2.0",
+    "react-snap": "^1.23.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "babili-webpack-plugin": "^0.1.2",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.3",
+    "electron": "^9.0.0",
+    "electron-devtools-installer": "^3.0.0",
+    "electron-packager": "^14.2.1",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-pxtorem": "^5.1.1",
+    "sass": "^1.26.6",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
