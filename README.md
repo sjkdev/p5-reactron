@@ -1,4 +1,4 @@
-# P5 REACTRON!
+# P5 Reactron
 
 ### Webpack React Electron Starter
 
